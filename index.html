@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d0b1a" />
+  <meta name="description"
+        content="Just Do It — A beautiful, fast to-do app by Nani Bayanaboina. Priorities, filters, drag-to-reorder and live clock." />
+  <meta name="author" content="Nani Bayanaboina" />
+
+  <!-- Open Graph (looks great when shared on Slack / WhatsApp / Twitter) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Task Manager — by Nani Bayanaboina" />
+  <meta property="og:description" content="A beautiful task manager with priorities, filters, drag-to-reorder and live clock. Built by Nani Bayanaboina." />
+
+  <!-- Google Fonts CDN — Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="CSS/main.css" />
+  <title>Task Manager — by Nani Bayanaboina</title>
+</head>
+
+<body class="standard">
+<div id="app">
+
+  <!-- ══════════ HEADER ══════════ -->
+  <header id="header">
+    <div class="theme-row">
+      <button class="theme-btn standard-theme" data-theme="standard"
+              title="Standard" aria-label="Standard Theme"></button>
+      <button class="theme-btn light-theme"    data-theme="light"
+              title="Light"    aria-label="Light Theme"></button>
+      <button class="theme-btn darker-theme"   data-theme="darker"
+              title="Darker"   aria-label="Darker Theme"></button>
+    </div>
+    <h1 id="title">Just do it.</h1>
+    <p id="datetime"></p>
+  </header>
+
+  <!-- ══════════ PROGRESS ══════════ -->
+  <div id="progress-wrap">
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+    <span id="progress-text">0 / 0 done</span>
+  </div>
+
+  <!-- ══════════ FORM ══════════ -->
+  <section id="form" aria-label="Add task">
+    <form id="todo-form" autocomplete="off">
+
+      <!-- Input row -->
+      <div class="form-top">
+        <input class="todo-input" type="text" id="todo-input"
+               placeholder="Add a new task…" aria-label="New task" />
+        <button class="todo-btn" type="submit" id="add-btn" aria-label="Add task">
+          <!-- Plus SVG -->
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="2.8"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <line x1="5"  y1="12" x2="19" y2="12"/>
+          </svg>
+          <span>Add</span>
+        </button>
+      </div>
+
+      <!-- Priority row -->
+      <div class="form-bottom">
+        <span class="pri-label">Priority:</span>
+        <div class="pri-group" role="group" aria-label="Priority level">
+          <button type="button" class="pri-btn" data-pri="low"  aria-pressed="false">Low</button>
+          <button type="button" class="pri-btn active" data-pri="med"  aria-pressed="true">Med</button>
+          <button type="button" class="pri-btn" data-pri="high" aria-pressed="false">High</button>
+        </div>
+      </div>
+
+    </form>
+  </section>
+
+  <!-- ══════════ CONTROLS (filters + sort + clear) ══════════ -->
+  <div id="controls">
+    <div class="filter-tabs" role="tablist" aria-label="Filter tasks">
+      <button class="filter-btn active" data-filter="all"
+              role="tab" aria-selected="true">
+        All <span class="badge" id="badge-all">0</span>
+      </button>
+      <button class="filter-btn" data-filter="active"
+              role="tab" aria-selected="false">
+        Active <span class="badge" id="badge-active">0</span>
+      </button>
+      <button class="filter-btn" data-filter="done"
+              role="tab" aria-selected="false">
+        Done <span class="badge" id="badge-done">0</span>
+      </button>
+    </div>
+
+    <div class="control-actions">
+      <button id="sort-btn" title="Sort by priority">
+        <!-- Sort SVG -->
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2.2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="6"  x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="15" y2="12"/>
+          <line x1="3" y1="18" x2="9"  y2="18"/>
+        </svg>
+        Sort
+      </button>
+      <button id="clear-btn" title="Delete all completed tasks">
+        <!-- Trash SVG -->
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="3 6 5 6 21 6"/>
+          <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/>
+          <path d="M10 11v6M14 11v6M9 6V4h6v2"/>
+        </svg>
+        Clear done
+      </button>
+    </div>
+  </div>
+
+  <!-- ══════════ TASK LIST ══════════ -->
+  <div id="myUnOrdList">
+    <ul class="todo-list" id="todo-list" aria-label="Task list"
+        aria-dropeffect="move"></ul>
+
+    <!-- Empty state -->
+    <div id="empty-state">
+      <svg width="100" height="100" viewBox="0 0 100 100" fill="none"
+           aria-hidden="true">
+        <circle cx="50" cy="50" r="42" stroke="currentColor"
+                stroke-width="1.5" stroke-dasharray="6 4" opacity="0.25"/>
+        <circle cx="50" cy="50" r="24" stroke="currentColor"
+                stroke-width="1" opacity="0.15"/>
+        <path d="M34 50 L46 62 L67 38" stroke="currentColor"
+              stroke-width="3" stroke-linecap="round"
+              stroke-linejoin="round" opacity="0.35"/>
+      </svg>
+      <p id="empty-msg">All clear! Add a task above.</p>
+    </div>
+  </div>
+
+</div><!-- /#app -->
+
+<script src="JS/time.js"></script>
+<script src="JS/main.js"></script>
+</body>
+</html>
