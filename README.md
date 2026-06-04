@@ -1,16 +1,8 @@
-# Task Manager — by Venkat Nani
+# Task Manager
 
-> A fast, beautiful task management web app built with pure HTML, CSS & Vanilla JavaScript.
+**by Venkat Nani** · [Live App](https://letsdoitnani.netlify.app) · [GitHub](https://github.com/venkatbayanaboina/task-manager)
 
-🌐 **Live at → [letsdoitnani.netlify.app](https://letsdoitnani.netlify.app)**
-
----
-
-## Overview
-
-Task Manager is a fully client-side productivity app with a clean, modern interface. It supports task priorities, smart filters, drag-and-drop reordering, and three carefully crafted themes — all with zero frameworks or dependencies.
-
-Every task is saved to your browser's localStorage, so your data persists across sessions without any server or account needed.
+A fast, modern task management web app built with pure HTML, CSS and Vanilla JavaScript. No frameworks. No dependencies. No build step.
 
 ---
 
@@ -18,18 +10,17 @@ Every task is saved to your browser's localStorage, so your data persists across
 
 | Feature | Detail |
 |---|---|
-| ✅ Add / Edit / Delete | Inline double-click editing, fall animation on delete |
-| 🎯 Priority Levels | High · Med · Low — colour-coded left border on each card |
-| 🗂️ Filter Tabs | All · Active · Done with live count badges |
-| 🔀 Drag & Drop | Reorder tasks by dragging — order saved automatically |
-| 🔃 Sort by Priority | One click sorts High → Med → Low |
-| 🗑️ Clear Completed | Remove all done tasks at once |
-| 📊 Progress Bar | Visual completion tracker |
-| 🕐 Live Clock | Updates every second |
-| 🎨 3 Themes | Standard (Purple) · Light (Indigo) · Darker (Cyan) |
-| 💾 Persistent Storage | Tasks, theme & order survive page reloads |
-| 📱 Responsive | Works on mobile, tablet and desktop |
-| ⚡ Zero Dependencies | No frameworks, no build tools, no installs |
+| Add / Edit / Delete | Inline double-click editing, animated delete |
+| Priority Levels | High · Med · Low — colour-coded per card |
+| Filter Tabs | All · Active · Done with live count badges |
+| Drag and Drop | Reorder tasks by dragging — order persists |
+| Sort by Priority | One click sorts High to Low |
+| Clear Completed | Remove all done tasks at once |
+| Progress Bar | Visual completion tracker |
+| Live Clock | Updates every second |
+| Themes | Standard · Light · Darker |
+| Persistent Storage | Tasks and settings survive page reloads |
+| Responsive | Works on mobile, tablet and desktop |
 
 ---
 
@@ -37,11 +28,11 @@ Every task is saved to your browser's localStorage, so your data persists across
 
 | Layer | Technology |
 |---|---|
-| Structure | HTML5 (semantic) |
-| Styling | Vanilla CSS3 — custom properties, Flexbox, keyframe animations |
+| Structure | HTML5 |
+| Styling | Vanilla CSS3 — custom properties, Flexbox, animations |
 | Logic | Vanilla JavaScript ES6+ |
-| Font | [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts CDN |
-| Storage | Browser localStorage API |
+| Font | Inter via Google Fonts CDN |
+| Storage | Browser localStorage |
 
 ---
 
@@ -49,12 +40,12 @@ Every task is saved to your browser's localStorage, so your data persists across
 
 ```
 task-manager/
-├── index.html        — App entry point
+├── index.html
 ├── CSS/
-│   └── main.css      — All styles + 3 theme palettes via CSS variables
+│   └── main.css
 ├── JS/
-│   ├── main.js       — Core logic (tasks, filters, drag-drop, themes)
-│   └── time.js       — Live clock
+│   ├── main.js
+│   └── time.js
 ├── assets/
 │   └── favicon.png
 ├── README.md
@@ -66,7 +57,7 @@ task-manager/
 ## Author
 
 **Venkat Nani**
-GitHub → [github.com/venkatbayanaboina](https://github.com/venkatbayanaboina)
+[github.com/venkatbayanaboina](https://github.com/venkatbayanaboina)
 
 ---
 
