@@ -1,46 +1,29 @@
-MIT License — With Creative Freedom Clause
+MIT License
 
-Copyright (c) 2024 Nani Bayanaboina
+Copyright (c) 2024 Venkat Nani
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to use,
-copy, modify, merge, publish, distribute, and build upon it — for personal,
-educational, or commercial purposes — without restriction.
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
----
-
-## You are free to
-
-- ✅ Use this project for anything you want
-- ✅ Modify, redesign, and extend it however you like
-- ✅ Add new features — creativity is encouraged, not limited
-- ✅ Distribute your own version
-- ✅ Use it commercially or privately
-- ✅ Build something entirely new on top of it
-
-## You must
-
-- 📌 Keep this copyright notice in your copy or modified version
-- 📌 Give credit to the original author (Nani Bayanaboina) somewhere — a
-  comment in the code, a footer, or a README line is enough
-
-## Disclaimer
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED. THE AUTHOR (NANI BAYANABOINA) IS NOT RESPONSIBLE FOR ANY DAMAGES,
-MISUSE, ILLEGAL USE, COPYRIGHT DISPUTES, OR ANY CONSEQUENCES ARISING FROM
-THE USE OR MODIFICATION OF THIS SOFTWARE. YOU USE IT AT YOUR OWN RISK.
-
-The author does not endorse, support, or take responsibility for any use of
-this software that violates applicable laws or the rights of others. Any
-such usage is solely the responsibility of the individual using it.
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ---
 
-## A note to developers
-
-Don't stop at what's here. Fork it, redesign it, make it yours.
-Add features, change the colours, rebuild the whole thing.
-That is the point.
-
-— Nani Bayanaboina
+This software is open for use, modification, and distribution by anyone.
+Contributors and developers are welcome to extend, improve, or build upon
+this project freely. The author takes no responsibility for how this software
+is used, misused, or adapted by others. All derivative works remain the sole
+responsibility of their respective authors.
