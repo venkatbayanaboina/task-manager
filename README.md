@@ -1,6 +1,6 @@
 # Task Manager
 
-**by Venkat Nani** · [Live App](https://letsdoitnani.netlify.app) · [GitHub](https://github.com/venkatbayanaboina/task-manager)
+**by Venkat Nani** · [Live App](https://letsdoitnani.netlify.app) 
 
 A fast, modern task management web app built with pure HTML, CSS and Vanilla JavaScript. No frameworks. No dependencies. No build step.
 
