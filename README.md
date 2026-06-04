@@ -70,6 +70,23 @@ GitHub → [github.com/venkatbayanaboina](https://github.com/venkatbayanaboina)
 
 ---
 
-## License
+## License & Usage
 
-MIT © Nani Bayanaboina
+MIT Licensed — with a Creative Freedom Clause.
+
+**You can use, copy, modify, fork, redesign, and build on this freely.**
+Credit to the original author (Nani Bayanaboina) is appreciated but just a line anywhere is enough.
+
+The author is **not responsible** for any misuse, illegal use, copyright disputes,
+or consequences arising from how others use or modify this software.
+Any such usage is solely the responsibility of the person using it.
+
+> **To every developer who finds this** — don't stop at what's here.
+> Fork it. Break it. Rebuild it better. Creativity has no ceiling.
+> That's the whole point.
+
+See [LICENSE](LICENSE) for full terms.
+
+---
+
+MIT © Nani Bayanaboina — All rights noted, none blocking your creativity.
