@@ -1,106 +1,75 @@
 # Task Manager — by Nani Bayanaboina
 
-> A beautiful, modern task management web app built with HTML, CSS & Vanilla JavaScript.
+> A fast, beautiful task management web app built with pure HTML, CSS & Vanilla JavaScript.
 
-## 🌐 Live App → [letsdoitnani.netlify.app](https://letsdoitnani.netlify.app)
-
----
-
-## 🚀 Live Demo
-
-> Deploy this project to [Netlify Drop](https://app.netlify.com/drop) by dragging the project folder — get a live URL in 30 seconds.
+🌐 **Live at → [letsdoitnani.netlify.app](https://letsdoitnani.netlify.app)**
 
 ---
 
-## ✨ Features
+## Overview
 
-- ✅ **Add, edit & delete tasks** — double-click any task to edit inline
-- 🎯 **Priority levels** — High 🔴 / Medium 🟡 / Low 🟢 with coloured card borders
-- 🗂️ **Filter tabs** — All / Active / Done with live count badges
-- 🔀 **Drag & drop reorder** — rearrange tasks by dragging, order saved automatically
-- 🔃 **Sort by priority** — one click sorts High → Med → Low
-- 🗑️ **Clear completed** — remove all done tasks at once
-- 📊 **Progress bar** — visual tracker of task completion
-- 🕐 **Live clock** — updates every second
-- 🎨 **3 Themes** — Standard (Purple), Light (Indigo), Darker (Cyan/Black)
-- 💾 **localStorage** — tasks, theme and order persist across page reloads
-- 📱 **Fully responsive** — works on mobile, tablet and desktop
-- ⚡ **Zero dependencies** — no frameworks, no build tools needed
+Task Manager is a fully client-side productivity app with a clean, modern interface. It supports task priorities, smart filters, drag-and-drop reordering, and three carefully crafted themes — all with zero frameworks or dependencies.
+
+Every task is saved to your browser's localStorage, so your data persists across sessions without any server or account needed.
 
 ---
 
-## 🛠️ Tech Stack
+## Features
+
+| Feature | Detail |
+|---|---|
+| ✅ Add / Edit / Delete | Inline double-click editing, fall animation on delete |
+| 🎯 Priority Levels | High · Med · Low — colour-coded left border on each card |
+| 🗂️ Filter Tabs | All · Active · Done with live count badges |
+| 🔀 Drag & Drop | Reorder tasks by dragging — order saved automatically |
+| 🔃 Sort by Priority | One click sorts High → Med → Low |
+| 🗑️ Clear Completed | Remove all done tasks at once |
+| 📊 Progress Bar | Visual completion tracker |
+| 🕐 Live Clock | Updates every second |
+| 🎨 3 Themes | Standard (Purple) · Light (Indigo) · Darker (Cyan) |
+| 💾 Persistent Storage | Tasks, theme & order survive page reloads |
+| 📱 Responsive | Works on mobile, tablet and desktop |
+| ⚡ Zero Dependencies | No frameworks, no build tools, no installs |
+
+---
+
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
 | Structure | HTML5 (semantic) |
-| Styling | Vanilla CSS3 (CSS custom properties, Flexbox, animations) |
-| Logic | Vanilla JavaScript (ES6+) |
+| Styling | Vanilla CSS3 — custom properties, Flexbox, keyframe animations |
+| Logic | Vanilla JavaScript ES6+ |
 | Font | [Inter](https://fonts.google.com/specimen/Inter) via Google Fonts CDN |
 | Storage | Browser localStorage API |
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-just-do-it/
-├── index.html          # Main entry point
+task-manager/
+├── index.html        — App entry point
 ├── CSS/
-│   ├── main.css        # All styles + 3 theme palettes
-│   └── corner.css      # (legacy, unused)
+│   └── main.css      — All styles + 3 theme palettes via CSS variables
 ├── JS/
-│   ├── main.js         # Core app logic
-│   └── time.js         # Live clock
+│   ├── main.js       — Core logic (tasks, filters, drag-drop, themes)
+│   └── time.js       — Live clock
 ├── assets/
-│   ├── favicon.png
-│   └── demo*.png
+│   └── favicon.png
 ├── README.md
-├── CONTRIBUTING.md
-├── CODE_OF_CONDUCT.md
 └── LICENSE
 ```
 
 ---
 
-## 🧑‍💻 Local Setup
-
-No build step required. Just open the file:
-
-```bash
-# Option 1 — double-click index.html in Finder
-
-# Option 2 — terminal
-open index.html
-
-# Option 3 — VS Code Live Server extension
-# Right-click index.html → Open with Live Server
-```
-
----
-
-## 🌐 Deploy to the Web
-
-**Netlify Drop (30 seconds, no account needed):**
-1. Go to [app.netlify.com/drop](https://app.netlify.com/drop)
-2. Drag the project folder onto the page
-3. Get a live URL instantly
-
-**GitHub Pages:**
-1. Push to a GitHub repo
-2. Settings → Pages → Source → main branch
-3. URL: `https://yourusername.github.io/just-do-it`
-
----
-
-## 👤 Author
+## Author
 
 **Nani Bayanaboina**
-
-Built and maintained entirely by Nani Bayanaboina.
+GitHub → [github.com/venkatbayanaboina](https://github.com/venkatbayanaboina)
 
 ---
 
-## 📄 License
+## License
 
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
+MIT © Nani Bayanaboina
